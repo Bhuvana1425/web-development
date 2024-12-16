@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=75%, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style1.css">
+<body>
+    <h1>Job Application Form</h1>
+    <hr/>
+        <p>Thank you for your interest in working with us. 
+            please check below for available job opportunities that meet your criteria and
+             send your application by filling out the Job Application Form.</p>
+             <p>Name</p>
+             <label for="fname" ></label>
+             <input type="text" name="fname" id="fname" placeholder="First"></input>
+             <label for="lname" ></label>
+             <input type="text" name="lname" id="lname" placeholder="Last"></input>
+             <p>E-mail</p>
+             <label for="mail" ></label>
+             <input type="email" name="fname" id="mail" placeholder="john.doe@example.com"></input>
+             <p>What position are you applying for?  </p>
+             <select name="jobstat" id="qualf" >
+                <option value="default">-select-</option>
+                <option value="softeng">Software engineer</option>
+                <option value="webdev">Web developer</option>
+                <option value="tstr">Tester</option>
+            
+             </select>
+             <br> <br>
+             
+             <label for="int" >Available date</label><br>
+             <input type="date" name="interview" id="int" placeholder="DD/MM/YYYY"></input>
+
+
+             <p>what is your current status?</p>
+             <label for="crstat"> Employed</label>
+             <input type="radio" name="emp" id="crstat" value="employed">
+             <label for="qual">self employed</label>
+             <input type="radio" name="emp" id="qual" value="selfemployed"><br>
+             <label for="x"> unemployed</label>
+             <input type="radio" name="emp" id="x" value="unemployed">
+             <label for="y"> student</label>
+             <input type="radio" name="emp" id="y" value="student">
+             <p>please provide your resume link</p>
+             <label for="resume" ></label>
+             <input type="url" name="res" id="resume" placeholder="https://www.example.com/"></input>
+             <p>please provide your resume</p>
+             <label for="resupht" ></label>
+             <input type="file" name="resph" id="resupht" placeholder="Resume"></input>
+             <p>Do you have references?(optional)</p>
+             <label for="fref" ></label>
+             <input type="text" name="reffname" id="fref" placeholder="First"></input>
+             <label for="lref" ></label>
+             <input type="text" name="reflname" id="lref" placeholder="Last"></input>
+             <p>Reference email</p>
+             <label for="refem" ></label>
+             <input type="email" name="refemail" id="refem" placeholder="joh.doe@example.com"></input><br><br>
+             <button>Reset</button>
+             <button  id="but">Apply</button>
+            
+</body>
+</html>
