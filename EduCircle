@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> <meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>EduCircle - Your Learning Hub</title> 
+<link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+<!-- Header--> 
+<header> 
+<h1>EduNexus</h1> 
+<p>Your Learning Hub for JEE, NEET, and more</p> 
+</header> 
+<!-- Navigation --> 
+<nav> 
+<a href="#home">Home</a> 
+<a href="#about-us">About Us</a> 
+<a href="#courses">Courses</a> 
+<a href="#contact">Contact</a> 
+</nav> <!-- Hero Section --> 
+<section id="hero"> 
+<h2>Learn. Explore. Succeed.</h2>
+<button aria-label="Explore Courses"onclick="document.getElementById('courses').scrollIntoView()">Explore Courses</button> 
+</section> 
+<!-- About Us Section --> 
+<div id="about-us" class="section">
+<h2>About Us</h2> 
+<p>EduCircle is your trusted partner in learning. Our mission is to empower students to achieve their academic goals through personalized learning experiences. With expert faculty, interactive classes, and tailored resources, we ensure every student reaches their true potential.</p>
+<p>Whether you're preparing for competitive exams like JEE or NEET, or exploring new skills, EduCircle is here to guide you every step of the way.</p>
+</div> 
+<!-- Main Content --> 
+<div id="main"> 
+<!-- Courses Section --> 
+<div class="section" id="courses"> 
+<h2>Our Popular Courses</h2> <div class="course-card" onclick="openEnrollForm('Physics')"> <h3>Physics</h3> 
+<p>Understand the world of motion, force, and energy.</p> 
+</div> <div class="course-card" onclick="openEnrollForm('Chemistry')"> 
+<h3>Chemistry</h3> 
+<p>Explore chemical reactions and the world of molecules.</p> 
+</div> 
+<div class="course-card" onclick="openEnrollForm('Mathematics')">
+<h3>Mathematics</h3> 
+<p>Master algebra, calculus, and geometry with expert guidance.</p> 
+</div> 
+</div> 
+<!-- Contact Section -->
+<div id="contact"> 
+<h2>CONTACT US </h2> 
+<!-- Contact Form --> <form> 
+<input type="text" placeholder="Your Name" required> 
+<input type="email" placeholder="Your Email" required> 
+<input type="text" placeholder="Subject" required> 
+<textarea placeholder="Message"></textarea> 
+<button type="submit">Send Message</button> 
+</form> </div> <!-- Enrollment Form (hidden by default) --> <div class="enroll-form" id="enrollForm">
+<div class="enroll-form-content"> <h2>Enroll in <span id="courseName"></span>
+</h2> 
+<form> 
+<input type="text" placeholder="Your Name" required> 
+<input type="email" placeholder="Your Email" required> 
+<button type="submit">Submit Enrollment</button> 
+</form> 
+<button onclick="closeEnrollForm()">Close</button> 
+</div> 
+</div> 
+<!-- Footer ---> 
+<footer> 
+<p>&copy; 2024 EduCircle. All rights reserved.</p> 
+</footer> 
+</body> 
+</html>
